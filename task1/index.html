@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework Vue</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+<div id="application">
+    <div>
+        <div class="card" v-for="cat in cats">
+            <img :src="cat.img">
+            <span>
+                {{cat.name}}
+                {{cat.age}}
+                {{cat.color}}
+            </span>
+            <button type="button" >Подробнее</button>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
