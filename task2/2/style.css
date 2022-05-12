@@ -1,0 +1,42 @@
+body{
+    padding: 0 15% 0 15%;
+}
+.buttons{
+    width: 100%;
+    padding: 15px 0;
+}
+button{
+    width: 50%;
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+.card{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+img{
+    width: 100%;
+}
+span{
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+.noText{
+    display: none;
+}
+.meow{
+    color: red;
+}
+.listImage{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+

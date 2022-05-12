@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+<div id="app">
+    <div class="buttons">
+        <button v-on:click.prevent="grid = true">Отобразить сеткой</button>
+        <button v-on:click.prevent="grid = false">Отобразить списком</button>
+    </div>
+    <div :class="{gridContainer: grid}">
+        <div class="card" v-for="article in articles">
+            <img :src="article.image"
+            :class="{listImage: !grid}">
+            <span :class="{noText: grid}">
+                {{article.title}}
+            </span>
+        </div>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

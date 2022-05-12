@@ -1,0 +1,16 @@
+.card{
+    border: black 2px solid;
+    width: 300px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.zero{
+    background-color: #d25d5d;
+}
+.not-many{
+    background-color: #e1e171;
+}
+.many{
+    background-color: #56cb56;
+}
