@@ -1,0 +1,9 @@
+.card{
+    padding: 15px;
+    border: 2px black solid;
+    width: 150px;
+}
+.selected{
+    border: 2px darkorange solid;
+    width: 200px;
+}
